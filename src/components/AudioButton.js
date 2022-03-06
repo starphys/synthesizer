@@ -17,6 +17,10 @@ const AudioButton = ({ name, playAudio, stopAudio, audioLength }) => {
         stopAudio();
         clearTimeout(timer);
       }}
+      onMouseLeave={() => {
+        stopAudio();
+        clearTimeout(timer);
+      }}
     >
       {name}
     </button>
